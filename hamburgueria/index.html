@@ -2,6 +2,12 @@
 <html lang="pt-BR">
 
 <head>
+    <script>
+        // Garante que a URL termine com "/" para que os caminhos relativos de imagens funcionem perfeitamente em subpastas de produção
+        if (window.location.pathname.endsWith('/hamburgueria')) {
+            window.location.replace(window.location.href + '/');
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pack Hamburgueria — +1.000 Artes Profissionais</title>
