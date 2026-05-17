@@ -3,9 +3,9 @@
 
 <head>
     <script>
-        // Garante que a URL termine com "/" para que os caminhos relativos de imagens funcionem perfeitamente em subpastas de produção
+        // Garante que a URL termine com "/" para que os caminhos relativos funcionem, sem quebrar UTMs ou parâmetros de busca
         if (window.location.pathname.endsWith('/hamburgueria')) {
-            window.location.replace(window.location.href + '/');
+            window.location.replace(window.location.pathname + '/' + window.location.search + window.location.hash);
         }
     </script>
     <meta charset="UTF-8">
