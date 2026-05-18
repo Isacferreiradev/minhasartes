@@ -11,15 +11,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pack Hamburgueria — +500 Artes Profissionais</title>
+    <meta name="description" content="Mais de 500 artes para hamburgueria prontas e editáveis no Canva. Atraia clientes com fotos realistas de hambúrgueres e designs profissionais!">
 
-    <!-- Poppins Only -->
+    <!-- Poppins Only (Optimized Async Loading) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdn.utmify.com.br">
     <link rel="preconnect" href="https://connect.facebook.net">
     <link rel="preload" href="assets/mockup-hero-hamburgueria.jpg" as="image" fetchpriority="high">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap"></noscript>
 
     <!-- Meta Pixel Code -->
     <script>
@@ -737,6 +738,8 @@
         Oferta Limitada Encerra Em: <span id="timer">02:46:46</span>
     </div>
 
+    <main id="main-content">
+
     <!-- Hero -->
     <section class="hero">
         <div class="container">
@@ -867,28 +870,28 @@
             <div class="check-item">
                 <div class="check-icon">✓</div>
                 <div>
-                    <h4 style="font-size: 0.9rem;">+500 Artes Hamburgueria Premium</h4>
+                    <h3 style="font-size: 0.9rem;">+500 Artes Hamburgueria Premium</h3>
                     <p style="font-size: 0.75rem;">Prontas para Instagram, Facebook e WhatsApp.</p>
                 </div>
             </div>
             <div class="check-item">
                 <div class="check-icon">✓</div>
                 <div>
-                    <h4 style="font-size: 0.9rem;">Artes Por Categorias</h4>
+                    <h3 style="font-size: 0.9rem;">Artes Por Categorias</h3>
                     <p style="font-size: 0.75rem;">Promoção, Cardápio, Frases e Datas Comemorativas.</p>
                 </div>
             </div>
             <div class="check-item">
                 <div class="check-icon">✓</div>
                 <div>
-                    <h4 style="font-size: 0.9rem;">Mockups Reais</h4>
+                    <h3 style="font-size: 0.9rem;">Mockups Reais</h3>
                     <p style="font-size: 0.75rem;">Para divulgar suas artes de forma profissional.</p>
                 </div>
             </div>
             <div class="check-item">
                 <div class="check-icon">✓</div>
                 <div>
-                    <h4 style="font-size: 0.9rem;">Arquivos Editáveis no Canva</h4>
+                    <h3 style="font-size: 0.9rem;">Arquivos Editáveis no Canva</h3>
                     <p style="font-size: 0.75rem;">Altere cores, textos e fotos com 1 clique.</p>
                 </div>
             </div>
@@ -1041,7 +1044,7 @@
             <div class="testi-card">
                 <div class="testi-avatar" style="background-image: url('assets/maria.jpg');"></div>
                 <div>
-                    <h4 style="font-size: 0.9rem;">ANA MARIA P.</h4>
+                    <h3 style="font-size: 0.9rem;">ANA MARIA P.</h3>
                     <p style="font-size: 0.7rem; color: #666; margin-bottom: 10px;">Recife - PE</p>
                     <p style="font-size: 0.85rem; font-style: italic; font-weight: 600;">"As artes são incríveis! Eu
                         perdia muito tempo criando, agora é só baixar e usar. Valeu cada centavo!"</p>
@@ -1051,7 +1054,7 @@
             <div class="testi-card">
                 <div class="testi-avatar" style="background-image: url('assets/joao.jpg');"></div>
                 <div>
-                    <h4 style="font-size: 0.9rem;">JOÃO PEDRO S.</h4>
+                    <h3 style="font-size: 0.9rem;">JOÃO PEDRO S.</h3>
                     <p style="font-size: 0.7rem; color: #666; margin-bottom: 10px;">São Paulo - SP</p>
                     <p style="font-size: 0.85rem; font-style: italic; font-weight: 600;">"Pack muito completo e
                         organizado. As artes chamam muita atenção no Instagram."</p>
@@ -1080,7 +1083,7 @@
                         <li style="opacity: 0.3;"><span>✕</span> Sem Suporte Prioritário</li>
                     </ul>
 
-                    <a href="javascript:void(0)" onclick="openDiscountModal()" class="neo-btn"
+                    <a href="#precos" onclick="openDiscountModal()" class="neo-btn"
                         style="background: var(--black);">QUERO O BÁSICO</a>
 
                     <div class="payment-methods">
@@ -1273,6 +1276,8 @@
             <div style="margin-top: 20px; font-size: 0.7rem;">🔒 COMPRA 100% SEGURA | ✓ SATISFAÇÃO GARANTIDA</div>
         </div>
     </footer>
+
+    </main>
 
     <!-- Notification -->
     <div class="notif-neo" id="notif">
