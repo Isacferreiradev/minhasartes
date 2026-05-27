@@ -1,0 +1,2294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <script>
+        if (window.location.pathname.endsWith('/stl')) {
+            window.location.replace(window.location.pathname + '/' + window.location.search + window.location.hash);
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pack STL — +3.000 Arquivos para Impressão 3D</title>
+    <meta name="description"
+        content="Mais de 3.000 arquivos STL prontos para imprimir. Anime, Marvel, DC, Carros, Mitologia, Religião, Vasos e muito mais. Acesso imediato e vitalício.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.utmify.com.br">
+    <link rel="preconnect" href="https://connect.facebook.net">
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap">
+    </noscript>
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '760386357063748');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=760386357063748&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck
+        data-utmify-prevent-subids async defer></script>
+
+    <style>
+        :root {
+            --bg: #0a0a0b;
+            --bg-2: #0f0f11;
+            --surface: #141417;
+            --surface-2: #1a1a1e;
+            --surface-3: #232328;
+            --border: rgba(255, 255, 255, 0.08);
+            --border-strong: rgba(255, 255, 255, 0.14);
+            --text: #f5f5f7;
+            --text-muted: #a1a1aa;
+            --text-dim: #71717a;
+            --silver-1: #e4e4e7;
+            --silver-2: #a1a1aa;
+            --silver-3: #52525b;
+            --success: #22c55e;
+            --success-dim: #16a34a;
+            --radius-sm: 10px;
+            --radius: 16px;
+            --radius-lg: 22px;
+            --shadow-sm: 0 4px 14px rgba(0, 0, 0, 0.35);
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+            --shadow-lg: 0 22px 60px rgba(0, 0, 0, 0.55);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            background: var(--bg);
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.55;
+            overflow-x: hidden;
+            background-image:
+                radial-gradient(800px circle at 50% -10%, rgba(255, 255, 255, 0.04), transparent 60%),
+                radial-gradient(600px circle at 80% 30%, rgba(255, 255, 255, 0.025), transparent 60%);
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 0 22px;
+        }
+
+        section {
+            padding: 56px 0;
+            position: relative;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Space Grotesk', 'Inter', sans-serif;
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            color: var(--text);
+        }
+
+        p {
+            color: var(--text-muted);
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* ====== TOP URGENCY BAR ====== */
+        .urgency-bar {
+            background: linear-gradient(180deg, #15151a 0%, #0d0d10 100%);
+            border-bottom: 1px solid var(--border);
+            color: var(--text);
+            padding: 12px 16px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.78rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(20px);
+        }
+
+        .urgency-bar .dot {
+            display: inline-block;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #ef4444;
+            margin-right: 10px;
+            vertical-align: middle;
+            box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.5);
+            animation: pulse 2s infinite;
+        }
+
+        .urgency-bar #timer {
+            color: #fff;
+            font-variant-numeric: tabular-nums;
+            font-weight: 700;
+            margin-left: 6px;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.5);
+            }
+
+            50% {
+                box-shadow: 0 0 0 8px rgba(239, 68, 68, 0);
+            }
+        }
+
+        /* ====== BADGE ====== */
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 7px 14px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        .badge-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin: 24px 0;
+        }
+
+        .mini-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 14px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: var(--silver-1);
+            letter-spacing: 0.03em;
+        }
+
+        .mini-badge svg {
+            color: var(--silver-1);
+        }
+
+        /* ====== HERO ====== */
+        .hero {
+            padding-top: 56px;
+            padding-bottom: 32px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.3rem, 8vw, 3.2rem);
+            margin-bottom: 18px;
+            background: linear-gradient(180deg, #ffffff 0%, #c8c8cf 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero h1 .accent {
+            background: linear-gradient(180deg, #e4e4e7 0%, #71717a 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: block;
+        }
+
+        .hero-sub {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            font-weight: 500;
+            margin: 8px auto 0;
+            max-width: 480px;
+        }
+
+        .hero-desc {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin: 28px auto 28px;
+            max-width: 500px;
+            line-height: 1.6;
+        }
+
+        /* ====== CTA BUTTON ====== */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            max-width: 420px;
+            padding: 18px 28px;
+            border-radius: var(--radius);
+            font-weight: 700;
+            font-size: 0.95rem;
+            letter-spacing: 0.02em;
+            cursor: pointer;
+            border: none;
+            transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+            position: relative;
+        }
+
+        .btn-primary {
+            background: linear-gradient(180deg, #ffffff 0%, #d4d4d8 100%);
+            color: #0a0a0b;
+            box-shadow: 0 12px 28px rgba(255, 255, 255, 0.08), inset 0 -2px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 18px 38px rgba(255, 255, 255, 0.12), inset 0 -2px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-success {
+            background: linear-gradient(180deg, #22c55e 0%, #15803d 100%);
+            color: #fff;
+            box-shadow: 0 12px 28px rgba(34, 197, 94, 0.25), inset 0 -2px 0 rgba(0, 0, 0, 0.18);
+        }
+
+        .btn-success:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 18px 38px rgba(34, 197, 94, 0.35), inset 0 -2px 0 rgba(0, 0, 0, 0.18);
+        }
+
+        .btn-ghost {
+            background: var(--surface-2);
+            color: var(--text);
+            border: 1px solid var(--border-strong);
+        }
+
+        .btn-ghost:hover {
+            background: var(--surface-3);
+            transform: translateY(-2px);
+        }
+
+        .btn-wrap {
+            display: flex;
+            justify-content: center;
+            margin-top: 28px;
+        }
+
+        /* ====== HIGHLIGHT BAR ====== */
+        .highlight-bar {
+            background: linear-gradient(180deg, #1c1c22 0%, #131318 100%);
+            border-top: 1px solid var(--border-strong);
+            border-bottom: 1px solid var(--border-strong);
+            padding: 18px 20px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 0.82rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: var(--silver-1);
+        }
+
+        /* ====== CHECKLIST (you receive) ====== */
+        .checklist {
+            display: grid;
+            gap: 12px;
+            margin-top: 36px;
+        }
+
+        .check-row {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 18px 20px;
+            background: linear-gradient(180deg, var(--surface) 0%, var(--surface-2) 100%);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+        }
+
+        .check-row .ico-square {
+            flex-shrink: 0;
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            background: rgba(34, 197, 94, 0.12);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #4ade80;
+        }
+
+        .check-row h3 {
+            font-size: 0.95rem;
+            margin-bottom: 2px;
+        }
+
+        .check-row p {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+        }
+
+        /* ====== MARQUEE ====== */
+        .marquee {
+            background: linear-gradient(180deg, #0d0d10 0%, #0a0a0b 100%);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            padding: 16px 0;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .marquee-inner {
+            display: inline-block;
+            animation: marquee 38s linear infinite;
+        }
+
+        .marquee-item {
+            color: var(--silver-2);
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin: 0 28px;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+
+        .marquee-item .sep {
+            display: inline-block;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: var(--silver-3);
+            vertical-align: middle;
+            margin-left: 28px;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* ====== HERO VISUAL — STL Mosaic ====== */
+        .hero-visual {
+            margin: 36px auto 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            max-width: 560px;
+        }
+
+        .tile {
+            aspect-ratio: 1;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            background: linear-gradient(135deg, var(--surface) 0%, var(--surface-2) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.25s ease, border-color 0.25s ease;
+        }
+
+        .tile:hover {
+            transform: translateY(-3px);
+            border-color: var(--border-strong);
+        }
+
+        .tile::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.06), transparent 60%);
+            pointer-events: none;
+        }
+
+        .tile svg {
+            width: 48%;
+            height: 48%;
+            color: var(--silver-2);
+            opacity: 0.85;
+        }
+
+        .tile .tile-label {
+            position: absolute;
+            bottom: 8px;
+            left: 10px;
+            font-size: 0.62rem;
+            color: var(--text-dim);
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .tile.featured {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        .tile.featured svg {
+            width: 38%;
+            height: 38%;
+        }
+
+        /* ====== SECTION TITLE ====== */
+        .section-title {
+            text-align: center;
+            margin-bottom: 14px;
+        }
+
+        .eyebrow {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--silver-2);
+            margin-bottom: 14px;
+            padding: 6px 12px;
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .section-title h2 {
+            font-size: clamp(1.7rem, 5vw, 2.3rem);
+            margin-bottom: 12px;
+        }
+
+        .section-title p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            max-width: 480px;
+            margin: 0 auto;
+        }
+
+        /* ====== BENEFITS GRID ====== */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 36px;
+        }
+
+        @media (max-width: 520px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .benefit-card {
+            background: linear-gradient(180deg, var(--surface) 0%, var(--surface-2) 100%);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 22px 20px;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--border-strong);
+        }
+
+        .benefit-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 10px;
+            background: var(--surface-3);
+            border: 1px solid var(--border-strong);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--silver-1);
+            margin-bottom: 16px;
+        }
+
+        .benefit-card h3 {
+            font-size: 1rem;
+            margin-bottom: 6px;
+            color: var(--text);
+        }
+
+        .benefit-card p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            line-height: 1.55;
+        }
+
+        /* ====== PACK CARDS ====== */
+        .pack-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-top: 36px;
+        }
+
+        @media (max-width: 520px) {
+            .pack-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .pack-card {
+            background: linear-gradient(180deg, var(--surface) 0%, var(--surface-2) 100%);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 22px 20px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .pack-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--border-strong);
+        }
+
+        .pack-card::before {
+            content: "";
+            position: absolute;
+            top: -1px;
+            left: 24px;
+            right: 24px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.18), transparent);
+        }
+
+        .pack-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: linear-gradient(180deg, var(--surface-3) 0%, var(--surface-2) 100%);
+            border: 1px solid var(--border-strong);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--silver-1);
+            margin-bottom: 14px;
+        }
+
+        .pack-card h3 {
+            font-size: 0.95rem;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+        }
+
+        .pack-card p {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        /* ====== STEPS / TIMELINE ====== */
+        .steps {
+            margin-top: 40px;
+            position: relative;
+        }
+
+        .step {
+            display: flex;
+            gap: 18px;
+            padding: 22px 22px;
+            background: linear-gradient(180deg, var(--surface) 0%, var(--surface-2) 100%);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            margin-bottom: 14px;
+            position: relative;
+        }
+
+        .step-num {
+            flex-shrink: 0;
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: linear-gradient(180deg, #ffffff 0%, #a1a1aa 100%);
+            color: #0a0a0b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.95rem;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .step-body h3 {
+            font-size: 1rem;
+            margin-bottom: 4px;
+        }
+
+        .step-body p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        /* ====== WHY LIST ====== */
+        .why-list {
+            margin-top: 36px;
+            display: grid;
+            gap: 12px;
+        }
+
+        .why-item {
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+            padding: 20px;
+            background: linear-gradient(180deg, var(--surface) 0%, var(--surface-2) 100%);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+        }
+
+        .why-check {
+            flex-shrink: 0;
+            width: 28px;
+            height: 28px;
+            border-radius: 8px;
+            background: rgba(34, 197, 94, 0.12);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #4ade80;
+            margin-top: 2px;
+        }
+
+        .why-item h3 {
+            font-size: 0.95rem;
+            margin-bottom: 3px;
+        }
+
+        .why-item p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        /* ====== IDEAL FOR ====== */
+        .ideal-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 36px;
+        }
+
+        @media (max-width: 520px) {
+            .ideal-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .ideal-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 18px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            font-size: 0.88rem;
+            font-weight: 500;
+            color: var(--text);
+        }
+
+        .ideal-item .dot-check {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid var(--border-strong);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--silver-1);
+            flex-shrink: 0;
+        }
+
+        /* ====== BONUS ====== */
+        .bonus-card {
+            background: linear-gradient(180deg, var(--surface) 0%, var(--surface-2) 100%);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            margin-bottom: 16px;
+            position: relative;
+        }
+
+        .bonus-header {
+            padding: 12px 20px;
+            background: linear-gradient(180deg, #1e1e22 0%, #15151a 100%);
+            border-bottom: 1px solid var(--border);
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--silver-2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .bonus-free {
+            background: linear-gradient(180deg, #22c55e 0%, #15803d 100%);
+            color: #fff;
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-size: 0.62rem;
+            letter-spacing: 0.08em;
+        }
+
+        .bonus-body {
+            padding: 24px 22px;
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .bonus-illu {
+            width: 72px;
+            height: 72px;
+            border-radius: 14px;
+            background: linear-gradient(180deg, var(--surface-3) 0%, var(--surface-2) 100%);
+            border: 1px solid var(--border-strong);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--silver-1);
+            flex-shrink: 0;
+        }
+
+        .bonus-info h3 {
+            font-size: 1rem;
+            margin-bottom: 4px;
+        }
+
+        .bonus-info p {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+
+        .bonus-info .price-strike {
+            font-size: 0.75rem;
+            color: var(--text-dim);
+            text-decoration: line-through;
+        }
+
+        /* ====== TESTIMONIALS ====== */
+        .testi {
+            background: linear-gradient(180deg, var(--surface) 0%, var(--surface-2) 100%);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 22px 22px;
+            margin-bottom: 14px;
+        }
+
+        .testi-head {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 14px;
+        }
+
+        .testi-avatar {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--surface-3), var(--surface-2));
+            border: 1px solid var(--border-strong);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--silver-1);
+            font-weight: 700;
+            font-size: 0.9rem;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .testi-meta h4 {
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1px;
+            color: var(--text);
+            text-transform: none;
+            letter-spacing: 0;
+        }
+
+        .testi-meta span {
+            font-size: 0.72rem;
+            color: var(--text-dim);
+        }
+
+        .stars {
+            color: #fbbf24;
+            font-size: 0.85rem;
+            margin-left: auto;
+            letter-spacing: 0.1em;
+        }
+
+        .testi p {
+            font-size: 0.92rem;
+            line-height: 1.6;
+            color: var(--text);
+            font-style: italic;
+        }
+
+        /* ====== PRICING ====== */
+        .price-grid {
+            display: grid;
+            gap: 18px;
+            margin-top: 30px;
+        }
+
+        .price-card {
+            background: linear-gradient(180deg, var(--surface) 0%, var(--surface-2) 100%);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 30px 26px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .price-card.featured {
+            border: 1px solid var(--border-strong);
+            background:
+                linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%),
+                linear-gradient(180deg, var(--surface) 0%, var(--surface-2) 100%);
+            box-shadow: var(--shadow-lg), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+        }
+
+        .price-card.featured::before {
+            content: "";
+            position: absolute;
+            top: -1px;
+            left: 18%;
+            right: 18%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+        }
+
+        .pop-badge {
+            position: absolute;
+            top: 18px;
+            right: 18px;
+            background: linear-gradient(180deg, #ffffff 0%, #d4d4d8 100%);
+            color: #0a0a0b;
+            font-size: 0.65rem;
+            font-weight: 700;
+            padding: 5px 11px;
+            border-radius: 999px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .price-name {
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: var(--silver-2);
+            margin-bottom: 18px;
+        }
+
+        .price-old {
+            color: var(--text-dim);
+            font-size: 0.9rem;
+            text-decoration: line-through;
+            margin-bottom: 4px;
+        }
+
+        .price-now {
+            display: flex;
+            align-items: baseline;
+            gap: 6px;
+            margin-bottom: 6px;
+        }
+
+        .price-now .currency {
+            font-size: 1.2rem;
+            color: var(--silver-2);
+            font-weight: 600;
+        }
+
+        .price-now .value {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 3.4rem;
+            font-weight: 700;
+            letter-spacing: -0.04em;
+            background: linear-gradient(180deg, #ffffff 0%, #a1a1aa 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1;
+        }
+
+        .price-note {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 22px;
+        }
+
+        .price-features {
+            list-style: none;
+            margin: 0 0 26px;
+            padding: 0;
+        }
+
+        .price-features li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 10px 0;
+            font-size: 0.88rem;
+            color: var(--text);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .price-features li:last-child {
+            border-bottom: none;
+        }
+
+        .price-features .ico {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: rgba(34, 197, 94, 0.14);
+            color: #4ade80;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .price-features li.muted {
+            color: var(--text-dim);
+        }
+
+        .price-features li.muted .ico {
+            background: rgba(255, 255, 255, 0.04);
+            color: var(--text-dim);
+        }
+
+        .pay-row {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 18px;
+            opacity: 0.55;
+        }
+
+        .pay-pill {
+            font-size: 0.62rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            background: var(--surface-3);
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            color: var(--silver-2);
+            letter-spacing: 0.06em;
+        }
+
+        /* ====== GUARANTEE ====== */
+        .guarantee-box {
+            background: linear-gradient(180deg, var(--surface) 0%, var(--surface-2) 100%);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 40px 28px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .guarantee-seal {
+            width: 96px;
+            height: 96px;
+            margin: 0 auto 22px;
+            border-radius: 50%;
+            background: linear-gradient(180deg, var(--surface-3) 0%, var(--surface-2) 100%);
+            border: 1px solid var(--border-strong);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--silver-1);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+        }
+
+        .guarantee-box h2 {
+            font-size: 1.6rem;
+            margin-bottom: 12px;
+        }
+
+        .guarantee-box p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            max-width: 420px;
+            margin: 0 auto 26px;
+        }
+
+        /* ====== FAQ ====== */
+        .faq-item {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 18px 22px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.92rem;
+            color: var(--text);
+            user-select: none;
+        }
+
+        .faq-icon {
+            color: var(--silver-2);
+            transition: transform 0.3s ease;
+            font-size: 1.1rem;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease, padding 0.35s ease;
+            padding: 0 22px;
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 240px;
+            padding: 0 22px 20px;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        /* ====== FOOTER ====== */
+        footer {
+            background: #07070a;
+            border-top: 1px solid var(--border);
+            padding: 50px 0 40px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+
+        footer .copyright {
+            font-size: 0.74rem;
+            color: var(--text-dim);
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .footer-badges {
+            margin-top: 22px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        /* ====== NOTIFICATION ====== */
+        .notif {
+            position: fixed;
+            top: -200px;
+            left: 16px;
+            right: 16px;
+            max-width: 360px;
+            margin: 0 auto;
+            background: linear-gradient(180deg, var(--surface) 0%, var(--surface-2) 100%);
+            border: 1px solid var(--border-strong);
+            border-radius: var(--radius);
+            padding: 14px 18px;
+            box-shadow: var(--shadow-lg);
+            z-index: 3000;
+            transition: top 0.55s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            font-size: 0.85rem;
+            color: var(--text);
+        }
+
+        .notif.show {
+            top: 16px;
+        }
+
+        .notif-ico {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: rgba(34, 197, 94, 0.16);
+            color: #4ade80;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .notif strong {
+            color: var(--text);
+            font-weight: 700;
+        }
+
+        .notif-meta {
+            display: block;
+            color: var(--text-dim);
+            font-size: 0.72rem;
+            margin-top: 2px;
+        }
+
+        /* ====== MODAL ====== */
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(8px);
+            z-index: 5000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .modal {
+            background: linear-gradient(180deg, var(--surface) 0%, var(--surface-2) 100%);
+            border: 1px solid var(--border-strong);
+            border-radius: var(--radius-lg);
+            max-width: 420px;
+            width: 100%;
+            padding: 36px 28px 30px;
+            position: relative;
+            text-align: center;
+            box-shadow: var(--shadow-lg);
+            animation: modalShow 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        @keyframes modalShow {
+            from {
+                transform: scale(0.92);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 14px;
+            right: 16px;
+            background: none;
+            border: none;
+            font-size: 1.6rem;
+            color: var(--text-muted);
+            cursor: pointer;
+            line-height: 1;
+        }
+
+        .modal h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .modal-sub {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 22px;
+        }
+
+        .modal-price {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px dashed var(--border-strong);
+            border-radius: var(--radius);
+            padding: 16px;
+            margin-bottom: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+        }
+
+        .modal-price .old {
+            color: var(--text-dim);
+            text-decoration: line-through;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .modal-price .new {
+            font-family: 'Space Grotesk', sans-serif;
+            color: #4ade80;
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .modal-link {
+            display: block;
+            margin-top: 14px;
+            font-size: 0.78rem;
+            color: var(--text-dim);
+            text-decoration: underline;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        /* ====== UTIL ====== */
+        .center {
+            text-align: center;
+        }
+
+        .divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--border-strong), transparent);
+            margin: 0 auto;
+            max-width: 600px;
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2.1rem;
+            }
+
+            section {
+                padding: 44px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Urgency Bar -->
+    <div class="urgency-bar">
+        <span class="dot"></span>
+        Oferta Limitada Encerra Em <span id="timer">02:46:46</span>
+    </div>
+
+    <main id="main-content">
+
+        <!-- ===== HERO ===== -->
+        <section class="hero">
+            <div class="container">
+                <span class="badge">Pack STL Premium • Edição 2026</span>
+
+                <h1 style="margin-top: 18px;">
+                    +3.000 Arquivos STL
+                    <span class="accent">Prontos para Imprimir</span>
+                </h1>
+
+                <p class="hero-sub">
+                    Anime · Marvel · DC · Carros · Mitologia · Religião · Vasos · e muito mais
+                </p>
+
+                <div class="badge-row">
+                    <span class="mini-badge">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg> Acesso Imediato
+                    </span>
+                    <span class="mini-badge">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg> Entrega Automática
+                    </span>
+                    <span class="mini-badge">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg> +4.582 Vendas
+                    </span>
+                </div>
+
+                <!-- Hero Visual Mosaic -->
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="tile featured">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5"></path>
+                            <path d="M2 12l10 5 10-5"></path>
+                        </svg>
+                        <span class="tile-label">3D · Pack</span>
+                    </div>
+                    <div class="tile">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="8" r="4"></circle>
+                            <path d="M6 22c0-4 3-7 6-7s6 3 6 7"></path>
+                        </svg>
+                        <span class="tile-label">Anime</span>
+                    </div>
+                    <div class="tile">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 16.7 5.5 21l2-7.5L2 9h7z"></path>
+                        </svg>
+                        <span class="tile-label">Heróis</span>
+                    </div>
+                    <div class="tile">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 13l2-5h14l2 5"></path>
+                            <path d="M3 13v5h18v-5"></path>
+                            <circle cx="7.5" cy="17.5" r="1.5"></circle>
+                            <circle cx="16.5" cy="17.5" r="1.5"></circle>
+                        </svg>
+                        <span class="tile-label">Carros</span>
+                    </div>
+                    <div class="tile">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8 21h8M9 21V9c0-2 1.5-3 3-3s3 1 3 3v12"></path>
+                            <path d="M7 9c0-3 2-5 5-5s5 2 5 5"></path>
+                        </svg>
+                        <span class="tile-label">Vasos</span>
+                    </div>
+                </div>
+
+                <p class="hero-desc">
+                    A biblioteca definitiva para quem quer imprimir modelos 3D incríveis sem perder horas procurando
+                    arquivos pela internet.
+                </p>
+
+                <div class="btn-wrap">
+                    <a href="#precos" class="btn btn-primary">
+                        Quero o Pack por R$9,90
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== MARQUEE ===== -->
+        <div class="marquee">
+            <div class="marquee-inner">
+                <span class="marquee-item">STL Premium<span class="sep"></span></span>
+                <span class="marquee-item">Arquivos Organizados<span class="sep"></span></span>
+                <span class="marquee-item">Modelos Exclusivos<span class="sep"></span></span>
+                <span class="marquee-item">Alta Qualidade<span class="sep"></span></span>
+                <span class="marquee-item">Acesso Vitalício<span class="sep"></span></span>
+                <span class="marquee-item">Atualizações Futuras<span class="sep"></span></span>
+                <span class="marquee-item">STL Premium<span class="sep"></span></span>
+                <span class="marquee-item">Arquivos Organizados<span class="sep"></span></span>
+                <span class="marquee-item">Modelos Exclusivos<span class="sep"></span></span>
+                <span class="marquee-item">Alta Qualidade<span class="sep"></span></span>
+                <span class="marquee-item">Acesso Vitalício<span class="sep"></span></span>
+                <span class="marquee-item">Atualizações Futuras<span class="sep"></span></span>
+            </div>
+        </div>
+
+        <!-- ===== VEJA O QUE VAI RECEBER (showcase) ===== -->
+        <section>
+            <div class="container">
+                <div class="section-title">
+                    <span class="eyebrow">O que você recebe</span>
+                    <h2>Veja o que você vai receber</h2>
+                    <p>Modelos STL de alta qualidade organizados por categorias.</p>
+                </div>
+
+                <div class="pack-grid">
+                    <div class="pack-card">
+                        <div class="pack-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="4"></circle>
+                                <path d="M6 22c0-4 3-7 6-7s6 3 6 7"></path>
+                                <path d="M8 6l-2-2M16 6l2-2"></path>
+                            </svg>
+                        </div>
+                        <h3>Pack Anime</h3>
+                        <p>Naruto, Dragon Ball, One Piece, Jujutsu, Demon Slayer e mais.</p>
+                    </div>
+
+                    <div class="pack-card">
+                        <div class="pack-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-1.5z"></path>
+                            </svg>
+                        </div>
+                        <h3>Pack Marvel</h3>
+                        <p>Heróis, bustos e colecionáveis em altíssima definição.</p>
+                    </div>
+
+                    <div class="pack-card">
+                        <div class="pack-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M2 12a10 10 0 1020 0 10 10 0 00-20 0z"></path>
+                                <path d="M8 12c0-3 2-5 4-5s4 2 4 5"></path>
+                            </svg>
+                        </div>
+                        <h3>Pack DC Comics</h3>
+                        <p>Batman, Coringa, Superman e toda a Liga da Justiça.</p>
+                    </div>
+
+                    <div class="pack-card">
+                        <div class="pack-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 13l2-5h14l2 5"></path>
+                                <path d="M3 13v5h18v-5"></path>
+                                <circle cx="7.5" cy="17.5" r="1.5"></circle>
+                                <circle cx="16.5" cy="17.5" r="1.5"></circle>
+                            </svg>
+                        </div>
+                        <h3>Pack Carros</h3>
+                        <p>Modelos esportivos, clássicos e icônicos para colecionar.</p>
+                    </div>
+
+                    <div class="pack-card">
+                        <div class="pack-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2l3 6h6l-5 4 2 7-6-4-6 4 2-7-5-4h6z"></path>
+                            </svg>
+                        </div>
+                        <h3>Pack Mitologia</h3>
+                        <p>Deuses, guerreiros e criaturas épicas em alto detalhe.</p>
+                    </div>
+
+                    <div class="pack-card">
+                        <div class="pack-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2v20M5 9h14M8 15h8"></path>
+                            </svg>
+                        </div>
+                        <h3>Pack Religião</h3>
+                        <p>Esculturas religiosas detalhadas para presentes e devoção.</p>
+                    </div>
+
+                    <div class="pack-card">
+                        <div class="pack-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M8 21h8M9 21V9c0-2 1.5-3 3-3s3 1 3 3v12"></path>
+                                <path d="M7 9c0-3 2-5 5-5s5 2 5 5"></path>
+                            </svg>
+                        </div>
+                        <h3>Pack Vasos</h3>
+                        <p>Vasos modernos e geométricos para decoração premium.</p>
+                    </div>
+
+                    <div class="pack-card">
+                        <div class="pack-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="6" width="18" height="12" rx="2"></rect>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                                <line x1="8" y1="18" x2="8" y2="21"></line>
+                                <line x1="16" y1="18" x2="16" y2="21"></line>
+                            </svg>
+                        </div>
+                        <h3>Pack Suportes</h3>
+                        <p>Suportes gamers, para celular, fones, controles e utilidades.</p>
+                    </div>
+                </div>
+
+                <div class="btn-wrap">
+                    <a href="#precos" class="btn btn-primary">Quero Todos Estes STL</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== HIGHLIGHT BAR ===== -->
+        <div class="highlight-bar">Você recebe tudo isso</div>
+
+        <!-- ===== CHECKLIST ===== -->
+        <section>
+            <div class="container">
+                <div class="checklist">
+                    <div class="check-row">
+                        <div class="ico-square">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>+3.000 STL Premium</h3>
+                            <p>Arquivos prontos para impressão 3D, em alta qualidade.</p>
+                        </div>
+                    </div>
+                    <div class="check-row">
+                        <div class="ico-square">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Categorias Organizadas</h3>
+                            <p>Anime, Marvel, DC, Carros, Vasos, Religião e muito mais.</p>
+                        </div>
+                    </div>
+                    <div class="check-row">
+                        <div class="ico-square">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Alta Qualidade</h3>
+                            <p>Modelos detalhados, otimizados e prontos para imprimir.</p>
+                        </div>
+                    </div>
+                    <div class="check-row">
+                        <div class="ico-square">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Acesso Imediato</h3>
+                            <p>Receba tudo automaticamente após o pagamento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== HOW IT WORKS ===== -->
+        <section>
+            <div class="container">
+                <div class="section-title">
+                    <span class="eyebrow">Processo Simples</span>
+                    <h2>Como funciona o acesso?</h2>
+                    <p>Em 3 passos você já está imprimindo seus primeiros modelos.</p>
+                </div>
+
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-num">01</div>
+                        <div class="step-body">
+                            <h3>Escolha o Plano</h3>
+                            <p>Selecione o pack que atende às suas necessidades hoje.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-num">02</div>
+                        <div class="step-body">
+                            <h3>Receba Instantaneamente</h3>
+                            <p>Após o pagamento, o acesso chega no seu e-mail em segundos.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-num">03</div>
+                        <div class="step-body">
+                            <h3>Baixe e Comece a Imprimir</h3>
+                            <p>Faça download dos STL e mande direto para a sua impressora.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== WHY ===== -->
+        <section style="background: var(--bg-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+            <div class="container">
+                <div class="section-title">
+                    <span class="eyebrow">Vantagens</span>
+                    <h2>Por que o Pack STL?</h2>
+                    <p>Tudo o que você precisa para imprimir, colecionar e até revender.</p>
+                </div>
+
+                <div class="why-list">
+                    <div class="why-item">
+                        <div class="why-check">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Economize Horas</h3>
+                            <p>Pare de perder tempo procurando STL pela internet.</p>
+                        </div>
+                    </div>
+
+                    <div class="why-item">
+                        <div class="why-check">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Biblioteca Gigante</h3>
+                            <p>Tenha milhares de arquivos organizados em um só lugar.</p>
+                        </div>
+                    </div>
+
+                    <div class="why-item">
+                        <div class="why-check">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Ideal Para Revenda</h3>
+                            <p>Imprima e venda peças físicas com excelente margem de lucro.</p>
+                        </div>
+                    </div>
+
+                    <div class="why-item">
+                        <div class="why-check">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Atualizações Futuras</h3>
+                            <p>Receba gratuitamente os novos arquivos adicionados à biblioteca.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== IDEAL FOR ===== -->
+        <section>
+            <div class="container">
+                <div class="section-title">
+                    <span class="eyebrow">Para Quem é</span>
+                    <h2>Ideal para você que</h2>
+                </div>
+
+                <div class="ideal-grid">
+                    <div class="ideal-item">
+                        <span class="dot-check">
+                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </span>
+                        Tem impressora 3D
+                    </div>
+                    <div class="ideal-item">
+                        <span class="dot-check">
+                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </span>
+                        Vende peças impressas
+                    </div>
+                    <div class="ideal-item">
+                        <span class="dot-check">
+                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </span>
+                        É colecionador geek
+                    </div>
+                    <div class="ideal-item">
+                        <span class="dot-check">
+                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </span>
+                        Trabalha com modelagem
+                    </div>
+                    <div class="ideal-item">
+                        <span class="dot-check">
+                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </span>
+                        Quer ganhar dinheiro com 3D
+                    </div>
+                    <div class="ideal-item">
+                        <span class="dot-check">
+                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </span>
+                        Ama cultura geek e anime
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== BONUS ===== -->
+        <section style="background: var(--bg-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+            <div class="container">
+                <div class="section-title">
+                    <span class="eyebrow">Presentes Exclusivos</span>
+                    <h2>Bônus Liberados Hoje</h2>
+                    <p>Pacotes extras incluídos sem custo adicional para quem entrar agora.</p>
+                </div>
+
+                <div style="margin-top: 36px;">
+                    <div class="bonus-card">
+                        <div class="bonus-header">
+                            <span>Bônus 01</span>
+                            <span class="bonus-free">Grátis Hoje</span>
+                        </div>
+                        <div class="bonus-body">
+                            <div class="bonus-illu">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon
+                                        points="12 2 15 8 22 9 17 14 18 21 12 17.5 6 21 7 14 2 9 9 8 12 2"></polygon>
+                                </svg>
+                            </div>
+                            <div class="bonus-info">
+                                <h3>+200 STL Raros</h3>
+                                <p>Modelos exclusivos que você não encontra à venda em nenhum outro lugar.</p>
+                                <span class="price-strike">Valor original: R$ 67,00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bonus-card">
+                        <div class="bonus-header">
+                            <span>Bônus 02</span>
+                            <span class="bonus-free">Grátis Hoje</span>
+                        </div>
+                        <div class="bonus-body">
+                            <div class="bonus-illu">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                    <path d="M12 1v6M12 17v6M4.2 4.2l4.3 4.3M15.5 15.5l4.3 4.3M1 12h6M17 12h6M4.2 19.8l4.3-4.3M15.5 8.5l4.3-4.3"></path>
+                                </svg>
+                            </div>
+                            <div class="bonus-info">
+                                <h3>+50 STL Articulados</h3>
+                                <p>Modelos com partes móveis para colecionadores e brinquedos premium.</p>
+                                <span class="price-strike">Valor original: R$ 47,00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bonus-card">
+                        <div class="bonus-header">
+                            <span>Bônus 03</span>
+                            <span class="bonus-free">Grátis Hoje</span>
+                        </div>
+                        <div class="bonus-body">
+                            <div class="bonus-illu">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 19.5A2.5 2.5 0 016.5 17H20"></path>
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"></path>
+                                </svg>
+                            </div>
+                            <div class="bonus-info">
+                                <h3>Guia de Configuração 3D</h3>
+                                <p>Tutorial completo para configurar sua impressora e obter os melhores resultados.</p>
+                                <span class="price-strike">Valor original: R$ 37,00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TESTIMONIALS ===== -->
+        <section>
+            <div class="container">
+                <div class="section-title">
+                    <span class="eyebrow">Depoimentos</span>
+                    <h2>O que dizem os clientes</h2>
+                </div>
+
+                <div style="margin-top: 36px;">
+                    <div class="testi">
+                        <div class="testi-head">
+                            <div class="testi-avatar">RM</div>
+                            <div class="testi-meta">
+                                <h4>Rafael M.</h4>
+                                <span>São Paulo / SP</span>
+                            </div>
+                            <span class="stars">★★★★★</span>
+                        </div>
+                        <p>"Os arquivos são absurdos de bons. Só o pack anime já vale muito mais que o preço cobrado."
+                        </p>
+                    </div>
+
+                    <div class="testi">
+                        <div class="testi-head">
+                            <div class="testi-avatar">LP</div>
+                            <div class="testi-meta">
+                                <h4>Lucas P.</h4>
+                                <span>Curitiba / PR</span>
+                            </div>
+                            <span class="stars">★★★★★</span>
+                        </div>
+                        <p>"Comprei pra hobby e em uma semana já comecei a vender peças impressas para meus amigos."</p>
+                    </div>
+
+                    <div class="testi">
+                        <div class="testi-head">
+                            <div class="testi-avatar">MV</div>
+                            <div class="testi-meta">
+                                <h4>Marcos V.</h4>
+                                <span>Belo Horizonte / MG</span>
+                            </div>
+                            <span class="stars">★★★★★</span>
+                        </div>
+                        <p>"A organização dos arquivos ficou excelente. Fácil de encontrar exatamente o que eu queria."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PRICING ===== -->
+        <section id="precos" style="background: var(--bg-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+            <div class="container">
+                <div class="section-title">
+                    <span class="eyebrow">Escolha seu plano</span>
+                    <h2>Acesso por tempo limitado</h2>
+                    <p>Pague uma vez e use para sempre. Sem mensalidades.</p>
+                </div>
+
+                <div class="price-grid">
+                    <!-- Básico -->
+                    <div class="price-card">
+                        <div class="price-name">Pack STL Básico</div>
+                        <div class="price-old">R$ 47,00</div>
+                        <div class="price-now">
+                            <span class="currency">R$</span>
+                            <span class="value">9,90</span>
+                        </div>
+                        <div class="price-note">Pagamento único · sem mensalidades</div>
+
+                        <ul class="price-features">
+                            <li>
+                                <span class="ico">
+                                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                +500 STL essenciais
+                            </li>
+                            <li>
+                                <span class="ico">
+                                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                Acesso vitalício
+                            </li>
+                            <li>
+                                <span class="ico">
+                                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                Garantia de 7 dias
+                            </li>
+                            <li class="muted">
+                                <span class="ico">×</span>
+                                Sem bônus inclusos
+                            </li>
+                            <li class="muted">
+                                <span class="ico">×</span>
+                                Sem atualizações futuras
+                            </li>
+                        </ul>
+
+                        <a href="#precos" onclick="openDiscountModal()" class="btn btn-ghost">Quero o Básico</a>
+
+                        <div class="pay-row">
+                            <span class="pay-pill">PIX</span>
+                            <span class="pay-pill">CARTÃO</span>
+                            <span class="pay-pill">BOLETO</span>
+                        </div>
+                    </div>
+
+                    <!-- Completo -->
+                    <div class="price-card featured">
+                        <span class="pop-badge">Mais Vendido</span>
+                        <div class="price-name">Pack Completo + Bônus</div>
+                        <div class="price-old">R$ 147,00</div>
+                        <div class="price-now">
+                            <span class="currency">R$</span>
+                            <span class="value">19,90</span>
+                        </div>
+                        <div class="price-note">Pagamento único · acesso vitalício</div>
+
+                        <ul class="price-features">
+                            <li><span class="ico"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg></span>+3.000 STL Premium</li>
+                            <li><span class="ico"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg></span>Todos os 8 packs inclusos</li>
+                            <li><span class="ico"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg></span>BÔNUS: +200 STL raros</li>
+                            <li><span class="ico"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg></span>BÔNUS: STL articulados</li>
+                            <li><span class="ico"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg></span>BÔNUS: Guia de impressão 3D</li>
+                            <li><span class="ico"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg></span>Atualizações futuras gratuitas</li>
+                            <li><span class="ico"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg></span>Garantia de 30 dias</li>
+                            <li><span class="ico"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg></span>Acesso vitalício</li>
+                        </ul>
+
+                        <a href="https://pay.lowify.com.br/go.php?offer=84wb6sf" class="btn btn-success">
+                            Quero o Completo
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+
+                        <div class="pay-row">
+                            <span class="pay-pill">PIX</span>
+                            <span class="pay-pill">CARTÃO</span>
+                            <span class="pay-pill">BOLETO</span>
+                        </div>
+                        <p style="font-size: 0.72rem; color: var(--text-dim); text-align: center; margin-top: 14px;">
+                            Acesso imediato enviado para o seu e-mail.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FAQ ===== -->
+        <section>
+            <div class="container">
+                <div class="section-title">
+                    <span class="eyebrow">FAQ</span>
+                    <h2>Dúvidas frequentes</h2>
+                </div>
+
+                <div style="margin-top: 30px;">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Como recebo o acesso?</span>
+                            <span class="faq-icon">⌄</span>
+                        </div>
+                        <div class="faq-answer">
+                            O acesso é enviado automaticamente para o seu e-mail logo após a confirmação do pagamento.
+                            Pagamentos via PIX e cartão liberam na hora.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Os arquivos funcionam em qualquer impressora?</span>
+                            <span class="faq-icon">⌄</span>
+                        </div>
+                        <div class="faq-answer">
+                            Sim. Os arquivos STL são compatíveis com qualquer impressora 3D (FDM ou Resina). Basta
+                            laminar no software da sua impressora e imprimir.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Por quanto tempo terei acesso?</span>
+                            <span class="faq-icon">⌄</span>
+                        </div>
+                        <div class="faq-answer">
+                            O acesso é vitalício. Você paga uma única vez e o material é seu para sempre, incluindo
+                            todas as atualizações futuras adicionadas à biblioteca.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Posso vender as peças impressas?</span>
+                            <span class="faq-icon">⌄</span>
+                        </div>
+                        <div class="faq-answer">
+                            Sim. Você pode imprimir e vender as peças físicas resultantes, ideal para quem quer gerar
+                            renda extra com impressão 3D.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Tem suporte?</span>
+                            <span class="faq-icon">⌄</span>
+                        </div>
+                        <div class="faq-answer">
+                            Sim. Temos uma equipe pronta para tirar suas dúvidas via WhatsApp e e-mail sempre que
+                            precisar.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== GUARANTEE ===== -->
+        <section>
+            <div class="container">
+                <div class="guarantee-box">
+                    <div class="guarantee-seal">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            <polyline points="9 12 11 14 15 10"></polyline>
+                        </svg>
+                    </div>
+                    <h2>7 Dias de Garantia</h2>
+                    <p>Se você não gostar do material por qualquer motivo, devolvemos 100% do seu investimento. Sem
+                        perguntas, sem burocracia.</p>
+                    <div class="btn-wrap" style="margin-top: 0;">
+                        <a href="#precos" class="btn btn-primary">Testar Sem Risco</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FOOTER ===== -->
+        <footer>
+            <div class="container">
+                <p class="copyright">© 2026 Pack STL™</p>
+                <p>A maior biblioteca STL para impressão 3D.</p>
+                <div class="footer-badges">
+                    <span class="mini-badge">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="11" width="18" height="11" rx="2"></rect>
+                            <path d="M7 11V7a5 5 0 0110 0v4"></path>
+                        </svg>
+                        Compra Segura
+                    </span>
+                    <span class="mini-badge">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        Acesso Imediato
+                    </span>
+                    <span class="mini-badge">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        Satisfação Garantida
+                    </span>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Notification -->
+    <div class="notif" id="notif">
+        <div class="notif-ico">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+        </div>
+        <div>
+            <span id="notif-name">Rafael</span> acabou de comprar o <strong>Pack Completo</strong>
+            <span class="notif-meta" id="notif-meta">há 1 minuto · São Paulo - SP</span>
+        </div>
+    </div>
+
+    <!-- Discount Modal -->
+    <div class="modal-overlay" id="discountModal">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal()" aria-label="Fechar">×</button>
+            <span class="badge" style="margin-bottom: 14px;">Oferta Especial</span>
+            <h2>Espere! Última chance</h2>
+            <p class="modal-sub">Leve o <strong style="color: var(--text);">Pack Completo</strong> com um desconto
+                exclusivo de última hora.</p>
+
+            <div class="modal-price">
+                <span class="old">R$ 19,90</span>
+                <span class="new">R$ 14,90</span>
+            </div>
+
+            <ul class="price-features" style="text-align: left; margin-bottom: 18px;">
+                <li><span class="ico"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg></span>+3.000 STL Premium</li>
+                <li><span class="ico"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg></span>Todos os bônus inclusos</li>
+                <li><span class="ico"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg></span>Garantia blindada de 30 dias</li>
+                <li><span class="ico"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg></span>Acesso vitalício + atualizações</li>
+            </ul>
+
+            <a href="https://pay.lowify.com.br/go.php?offer=6bw0oqg" class="btn btn-success">Quero o Completo por R$ 14,90</a>
+            <span class="modal-link" onclick="goToBasic()">Não, quero continuar com o Plano Básico</span>
+        </div>
+    </div>
+
+    <script>
+        // Modal
+        function openDiscountModal() {
+            document.getElementById('discountModal').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal() {
+            document.getElementById('discountModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+        function goToBasic() {
+            document.body.style.overflow = 'auto';
+            window.location.href = "https://pay.lowify.com.br/checkout?product_id=J7DGVM";
+        }
+
+        // Countdown Timer
+        (function startTimer() {
+            let h = 2, m = 46, s = 46;
+            const el = document.getElementById('timer');
+            setInterval(() => {
+                s--;
+                if (s < 0) { s = 59; m--; }
+                if (m < 0) { m = 59; h--; }
+                if (h < 0) { h = 0; m = 0; s = 0; }
+                el.textContent =
+                    (h < 10 ? "0" + h : h) + ":" + (m < 10 ? "0" + m : m) + ":" + (s < 10 ? "0" + s : s);
+            }, 1000);
+        })();
+
+        // Notifications
+        const names = ["Rafael", "Lucas", "Marcos", "Bruno", "Pedro", "Felipe", "André", "Diego"];
+        const cities = ["São Paulo - SP", "Curitiba - PR", "Belo Horizonte - MG", "Rio de Janeiro - RJ",
+            "Porto Alegre - RS", "Salvador - BA", "Recife - PE", "Brasília - DF"];
+        const products = ["Pack Completo", "Pack Básico", "Pack Completo"];
+
+        function showNotif() {
+            const name = names[Math.floor(Math.random() * names.length)];
+            const city = cities[Math.floor(Math.random() * cities.length)];
+            const product = products[Math.floor(Math.random() * products.length)];
+            document.getElementById('notif-name').textContent = name;
+            document.getElementById('notif-meta').textContent =
+                `há ${Math.floor(Math.random() * 5) + 1} minutos · ${city}`;
+            document.querySelector('.notif strong').textContent = product;
+            const el = document.getElementById('notif');
+            el.classList.add('show');
+            setTimeout(() => el.classList.remove('show'), 4500);
+        }
+        setInterval(showNotif, 22000);
+        setTimeout(showNotif, 3500);
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(q => {
+            q.addEventListener('click', () => {
+                q.parentElement.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
