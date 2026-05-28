@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <script>
+        // Garante que a URL termine com "/" para que os caminhos relativos funcionem, sem quebrar UTMs ou parâmetros de busca
+        if (window.location.pathname.endsWith('/pizzaria')) {
+            window.location.replace(window.location.pathname + '/' + window.location.search + window.location.hash);
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pack Pizzaria — +1.000 Artes Profissionais</title>
+    <meta name="description"
+        content="Mais de 1.000 artes para pizzaria prontas e editáveis no Canva. Atraia clientes com fotos realistas de pizzas e designs profissionais!">
+
+    <!-- Poppins Only (Optimized Async Loading) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.utmify.com.br">
+    <link rel="preconnect" href="https://connect.facebook.net">
+    <link rel="preload" href="assets/mockup-hero-pizzaria.png" as="image" fetchpriority="high">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap">
+    </noscript>
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1152818236990125');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1152818236990125&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+    <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck
+        data-utmify-prevent-subids async defer></script>
+
+    <style>
+        :root {
+            --primary: #f97316;
+            /* Laranja Pizzaria */
+            --green: #22c55e;
+            --black: #000000;
+            --white: #ffffff;
+            --gray: #f3f4f6;
+            --border-width: 4px;
+            --shadow-offset: 8px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--white);
+            color: var(--black);
+            line-height: 1.4;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 40px 0;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            text-transform: uppercase;
+            font-weight: 900;
+            line-height: 1.1;
+        }
+
+        /* Utility Styles */
+        .highlight {
+            background: var(--primary);
+            color: var(--white);
+            padding: 2px 8px;
+            display: inline-block;
+            box-shadow: 4px 4px 0px var(--black);
+            border: 2px solid var(--black);
+        }
+
+        .neo-card {
+            background: var(--white);
+            border: var(--border-width) solid var(--black);
+            box-shadow: var(--shadow-offset) var(--shadow-offset) 0px var(--black);
+            padding: 20px;
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .neo-btn {
+            display: block;
+            background: var(--green);
+            color: var(--white);
+            text-decoration: none;
+            padding: 22px;
+            border-radius: 12px;
+            font-weight: 900;
+            font-size: 1.2rem;
+            text-align: center;
+            text-transform: uppercase;
+            border: var(--border-width) solid var(--black);
+            box-shadow: var(--shadow-offset) var(--shadow-offset) 0px var(--black);
+            transition: transform 0.1s;
+            cursor: pointer;
+        }
+
+        .neo-btn:active {
+            transform: translate(4px, 4px);
+            box-shadow: 4px 4px 0px var(--black);
+        }
+
+        /* Urgency Bar */
+        .urgency-bar {
+            background: var(--primary);
+            color: var(--white);
+            border-bottom: var(--border-width) solid var(--black);
+            padding: 12px 0;
+            text-align: center;
+            font-weight: 900;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        .mockup-main {
+            background: var(--white);
+            border: var(--border-width) solid var(--black);
+            box-shadow: 12px 12px 0px var(--black);
+            margin: 30px auto;
+            position: relative;
+            padding: 10px;
+            max-width: 90%;
+        }
+
+        .mockup-main .img-box {
+            background: #e5e7eb;
+            aspect-ratio: 4/3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+        }
+
+        .hero-desc {
+            background: var(--gray);
+            border-left: 8px solid var(--primary);
+            padding: 20px;
+            text-align: left;
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+
+        /* Marquee */
+        .marquee {
+            background: var(--black);
+            border-top: var(--border-width) solid var(--black);
+            border-bottom: var(--border-width) solid var(--black);
+            padding: 15px 0;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .marquee-inner {
+            display: inline-block;
+            animation: marquee 30s linear infinite;
+        }
+
+        .marquee-item {
+            color: var(--primary);
+            font-weight: 900;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            margin: 0 25px;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Gallery Marquee */
+        .gallery-container {
+            overflow: hidden;
+            padding: 20px 0;
+            background: var(--white);
+            margin: 20px 0;
+        }
+
+        .gallery-track {
+            display: flex;
+            gap: 20px;
+            width: max-content;
+            animation: galleryScroll 40s linear infinite;
+        }
+
+        .gallery-item {
+            width: 250px;
+            height: 250px;
+            border: 3px solid var(--black);
+            box-shadow: 6px 6px 0px var(--black);
+            flex-shrink: 0;
+            background-size: cover;
+            background-position: center;
+        }
+
+        @keyframes galleryScroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Preview Grid */
+        .preview-grid {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+            padding: 20px 0;
+            scrollbar-width: none;
+        }
+
+        .preview-card {
+            flex: 0 0 250px;
+            background: var(--white);
+            border: var(--border-width) solid var(--black);
+            box-shadow: 6px 6px 0px var(--black);
+            padding: 10px;
+        }
+
+        .preview-img {
+            background: #f3f4f6;
+            aspect-ratio: 1;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+        }
+
+        /* Highlight Bar */
+        .highlight-bar {
+            background: var(--primary);
+            color: var(--white);
+            border-top: var(--border-width) solid var(--black);
+            border-bottom: var(--border-width) solid var(--black);
+            padding: 15px 0;
+            text-align: center;
+            font-weight: 900;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+        }
+
+        /* Checklist */
+        .check-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: var(--white);
+            border: var(--border-width) solid var(--black);
+            box-shadow: 4px 4px 0px var(--black);
+            padding: 15px;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .check-icon {
+            background: var(--green);
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid var(--black);
+            flex-shrink: 0;
+        }
+
+        /* Access Steps */
+        .step-container {
+            margin-top: 40px;
+        }
+
+        .step-neo {
+            position: relative;
+            border: var(--border-width) solid var(--black);
+            box-shadow: 8px 8px 0px var(--black);
+            padding: 30px 20px;
+            margin-bottom: 40px;
+            background: var(--white);
+            text-align: left;
+        }
+
+        .step-num {
+            position: absolute;
+            top: -20px;
+            left: -10px;
+            background: var(--primary);
+            color: var(--white);
+            border: var(--border-width) solid var(--black);
+            padding: 5px 15px;
+            font-weight: 900;
+            font-size: 1.2rem;
+        }
+
+        /* Dark Section */
+        .section-dark {
+            background: var(--black);
+            color: var(--white);
+        }
+
+        .section-dark h2 {
+            color: var(--primary);
+        }
+
+        .dark-check {
+            background: #1a1a1a;
+            border: 2px solid #333;
+            border-left: 10px solid var(--primary);
+            padding: 15px;
+            margin-bottom: 10px;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            font-weight: 700;
+        }
+
+        /* Bonus Cards */
+        .bonus-neo {
+            border: var(--border-width) solid var(--black);
+            background: var(--white);
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: 8px 8px 0px var(--black);
+        }
+
+        .bonus-header {
+            background: var(--black);
+            color: var(--white);
+            padding: 10px;
+            text-align: center;
+            font-weight: 800;
+            font-size: 0.9rem;
+        }
+
+        .bonus-body {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .bonus-img {
+            background: var(--primary);
+            color: var(--white);
+            border: var(--border-width) solid var(--black);
+            margin-bottom: 20px;
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+        }
+
+        .btn-free {
+            background: var(--primary);
+            color: var(--white);
+            border: 3px solid var(--black);
+            padding: 10px 20px;
+            font-weight: 900;
+            display: inline-block;
+            margin-top: 15px;
+            text-transform: uppercase;
+        }
+
+        /* Testimonials */
+        .testi-card {
+            border: var(--border-width) solid var(--black);
+            padding: 20px;
+            text-align: left;
+            margin-bottom: 20px;
+            box-shadow: 6px 6px 0px var(--black);
+            display: flex;
+            gap: 15px;
+        }
+
+        .testi-avatar {
+            width: 60px;
+            height: 60px;
+            border: 3px solid var(--black);
+            flex-shrink: 0;
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Pricing Card Refined */
+        .price-card {
+            border: var(--border-width) solid var(--black);
+            box-shadow: 10px 10px 0px var(--black);
+            padding: 0;
+            margin-bottom: 50px;
+            text-align: center;
+            background: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .price-header {
+            background: var(--black);
+            color: var(--white);
+            padding: 20px;
+            text-transform: uppercase;
+        }
+
+        .price-body {
+            padding: 40px 25px;
+        }
+
+        .price-val {
+            font-size: 4.5rem;
+            font-weight: 900;
+            line-height: 0.9;
+            margin: 5px 0;
+            letter-spacing: -2px;
+        }
+
+        .price-symbol {
+            font-size: 1.5rem;
+            vertical-align: top;
+            margin-right: 5px;
+        }
+
+        .price-old {
+            text-decoration: line-through;
+            opacity: 0.5;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .price-features {
+            list-style: none;
+            text-align: left;
+            margin: 30px 0;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .price-features li {
+            padding: 12px 0;
+            border-bottom: 1px dashed #ddd;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .price-features li:last-child {
+            border-bottom: none;
+        }
+
+        .discount-badge {
+            position: absolute;
+            top: 20px;
+            right: -35px;
+            background: var(--green);
+            color: white;
+            padding: 5px 40px;
+            transform: rotate(45deg);
+            font-weight: 900;
+            font-size: 0.7rem;
+            border: 2px solid black;
+            box-shadow: 0 4px 0 black;
+        }
+
+        .payment-methods {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+            opacity: 0.8;
+        }
+
+        .pay-icon {
+            background: #f3f4f6;
+            border: 2px solid black;
+            padding: 4px 8px;
+            font-size: 0.6rem;
+            font-weight: 900;
+        }
+
+        /* Guarantee Box */
+        .guar-box {
+            border: var(--border-width) solid var(--black);
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 30px;
+            box-shadow: 12px 12px 0px var(--black);
+        }
+
+        .guar-icon {
+            background: var(--primary);
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: var(--border-width) solid var(--black);
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--white);
+        }
+
+        /* FAQ Refined */
+        .faq-item {
+            margin-bottom: 15px;
+            border: var(--border-width) solid var(--black);
+            box-shadow: 6px 6px 0px var(--black);
+            background: var(--white);
+            text-align: left;
+        }
+
+        .faq-question {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 800;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            user-select: none;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            padding: 0 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #444;
+            background: #fafafa;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+            padding: 0 20px 20px 20px;
+            border-top: 2px dashed #ddd;
+        }
+
+        .faq-icon {
+            transition: transform 0.3s ease;
+            font-size: 1.2rem;
+            color: var(--primary);
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        footer {
+            background: var(--black);
+            color: var(--white);
+            padding: 40px 0;
+            text-align: center;
+            font-weight: 700;
+            font-size: 0.8rem;
+        }
+
+        /* Notification Popup Refined (Modern Style) */
+        .notif-neo {
+            position: fixed;
+            top: -150px;
+            left: 20px;
+            right: 20px;
+            max-width: 360px;
+            margin: 0 auto;
+            background: var(--white);
+            border-radius: 12px;
+            border-left: 6px solid #22c55e;
+            padding: 15px 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            z-index: 3000;
+            transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #333;
+        }
+
+        .notif-neo.show {
+            top: 15px;
+        }
+
+        .notif-icon {
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+            color: #22c55e;
+        }
+
+        .notif-name {
+            color: #22c55e;
+            font-weight: 800;
+        }
+
+        .notif-meta {
+            opacity: 0.5;
+            font-size: 0.75rem;
+            margin-top: 4px;
+            display: block;
+        }
+
+        /* Modal Discount */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(5px);
+            z-index: 5000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .modal-neo {
+            background: var(--white);
+            border: var(--border-width) solid var(--black);
+            box-shadow: 12px 12px 0px var(--black);
+            max-width: 380px;
+            width: 100%;
+            padding: 30px 20px;
+            position: relative;
+            text-align: center;
+            animation: modalShow 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        @keyframes modalShow {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            background: none;
+            border: none;
+            font-size: 1.8rem;
+            font-weight: 900;
+            cursor: pointer;
+        }
+
+        .modal-price-box {
+            background: #f8fafc;
+            border: 2px dashed var(--black);
+            padding: 15px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .modal-link {
+            display: block;
+            margin-top: 15px;
+            font-weight: 800;
+            text-decoration: underline;
+            font-size: 0.85rem;
+            opacity: 0.6;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Urgency Bar -->
+    <div class="urgency-bar">
+        Oferta Limitada Encerra Em: <span id="timer">02:46:46</span>
+    </div>
+
+    <main id="main-content">
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="bold">
+                    <span class="highlight">+1.000 ARTES PIZZARIA</span><br>
+                    PRONTAS PARA EDITAR E VENDER<br>
+                    <span class="highlight">ACESSO IMEDIATO</span>
+                </h1>
+
+                <div class="mockup-main">
+                    <div class="img-box"
+                        style="background-image: url('assets/mockup-hero-pizzaria.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div
+                        style="position: absolute; top: -10px; right: -10px; background: #ef4444; color: white; padding: 5px 15px; font-weight: 900; border: 3px solid black; transform: rotate(5deg);">
+                        2.458 VENDAS
+                    </div>
+                </div>
+
+                <div class="hero-desc">
+                    A biblioteca definitiva para quem quer criar e vender conteúdo de pizzaria profissional sem
+                    perder
+                    horas
+                    criando artes do zero.
+                </div>
+
+                <a href="#precos" class="neo-btn">QUERO O PACK POR R$9,90</a>
+            </div>
+        </section>
+
+        <!-- Marquee -->
+        <div class="marquee">
+            <div class="marquee-inner">
+                <span class="marquee-item">✓ Cardápio Profissional</span>
+                <span class="marquee-item">✓ Promoções de Impacto</span>
+                <span class="marquee-item">✓ Pizza Artesanal</span>
+                <span class="marquee-item">✓ Legendas Prontas</span>
+                <span class="marquee-item">✓ Mockups Reais</span>
+                <span class="marquee-item">✓ Acesso Vitalício</span>
+                <!-- Dupe -->
+                <span class="marquee-item">✓ Cardápio Profissional</span>
+                <span class="marquee-item">✓ Promoções de Impacto</span>
+                <span class="marquee-item">✓ Pizza Artesanal</span>
+                <span class="marquee-item">✓ Legendas Prontas</span>
+                <span class="marquee-item">✓ Mockups Reais</span>
+                <span class="marquee-item">✓ Acesso Vitalício</span>
+            </div>
+        </div>
+
+        <!-- Preview Section Refined with Marquee -->
+        <section>
+            <div class="container"
+                style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                <h2 style="margin-bottom: 5px; font-size: 1.8rem; white-space: nowrap; width: 100%;">Veja o que você
+                </h2>
+                <div style="display: inline-block; margin-bottom: 25px;">
+                    <h2 style="font-size: 1.8rem; white-space: nowrap;"><span class="highlight">vai receber:</span></h2>
+                </div>
+                <p class="bold" style="font-size: 0.85rem; opacity: 0.7; white-space: nowrap; width: 100%;">Designs de
+                    alta
+                    conversão criados por especialistas</p>
+            </div>
+
+            <div class="gallery-container">
+                <div class="gallery-track">
+                    <!-- First Set -->
+                    <div class="gallery-item" style="background-image: url('assets/galeria/galeria-01-promocao.jpg');">
+                    </div>
+                    <div class="gallery-item" style="background-image: url('assets/galeria/galeria-02-pizza-dia.jpg');">
+                    </div>
+                    <div class="gallery-item" style="background-image: url('assets/galeria/galeria-03-delivery.jpg');">
+                    </div>
+                    <div class="gallery-item" style="background-image: url('assets/galeria/galeria-04-combo-familia.jpg');">
+                    </div>
+                    <div class="gallery-item" style="background-image: url('assets/galeria/galeria-05-borda-recheada.jpg');">
+                    </div>
+                    <div class="gallery-item" style="background-image: url('assets/galeria/galeria-06-sextou.jpg');">
+                    </div>
+                    <div class="gallery-item" style="background-image: url('assets/galeria/galeria-07-cardapio.jpg');">
+                    </div>
+                    <div class="gallery-item" style="background-image: url('assets/galeria/galeria-08-artesanal.jpg');">
+                    </div>
+                    <div class="gallery-item" style="background-image: url('assets/galeria/galeria-09-segunda-pizza.jpg');">
+                    </div>
+                    <div class="gallery-item"
+                        style="background-image: url('assets/galeria/galeria-10-novidade.jpg');">
+                    </div>
+                    <div class="gallery-item"
+                        style="background-image: url('assets/galeria/galeria-11-frase.jpg');">
+                    </div>
+                    <div class="gallery-item" style="background-image: url('assets/galeria/galeria-12-queijo.jpg');">
+                    </div>
+                    <div class="gallery-item" style="background-image: url('assets/galeria/galeria-13-happy-hour.jpg');">
+                    </div>
+                    <div class="gallery-item" style="background-image: url('assets/galeria/galeria-14-avaliacao.jpg');">
+                    </div>
+                    <div class="gallery-item"
+                        style="background-image: url('assets/galeria/galeria-15-peca-ja.jpg');">
+                    </div>
+                    <!-- Duplicate for Infinite Loop -->
+                    <div class="gallery-item" style="background-image: url('assets/galeria/galeria-01-promocao.jpg');">
+                    </div>
+                    <div class="gallery-item" style="background-image: url('assets/galeria/galeria-02-pizza-dia.jpg');">
+                    </div>
+                    <div class="gallery-item" style="background-image: url('assets/galeria/galeria-03-delivery.jpg');">
+                    </div>
+                    <div class="gallery-item" style="background-image: url('assets/galeria/galeria-04-combo-familia.jpg');">
+                    </div>
+                    <div class="gallery-item" style="background-image: url('assets/galeria/galeria-05-borda-recheada.jpg');">
+                    </div>
+                    <div class="gallery-item" style="background-image: url('assets/galeria/galeria-06-sextou.jpg');">
+                    </div>
+                    <div class="gallery-item" style="background-image: url('assets/galeria/galeria-07-cardapio.jpg');">
+                    </div>
+                    <div class="gallery-item" style="background-image: url('assets/galeria/galeria-08-artesanal.jpg');">
+                    </div>
+                    <div class="gallery-item" style="background-image: url('assets/galeria/galeria-09-segunda-pizza.jpg');">
+                    </div>
+                    <div class="gallery-item"
+                        style="background-image: url('assets/galeria/galeria-10-novidade.jpg');">
+                    </div>
+                    <div class="gallery-item"
+                        style="background-image: url('assets/galeria/galeria-11-frase.jpg');">
+                    </div>
+                    <div class="gallery-item" style="background-image: url('assets/galeria/galeria-12-queijo.jpg');">
+                    </div>
+                    <div class="gallery-item" style="background-image: url('assets/galeria/galeria-13-happy-hour.jpg');">
+                    </div>
+                    <div class="gallery-item" style="background-image: url('assets/galeria/galeria-14-avaliacao.jpg');">
+                    </div>
+                    <div class="gallery-item"
+                        style="background-image: url('assets/galeria/galeria-15-peca-ja.jpg');">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container text-center">
+                <a href="#precos" class="neo-btn" style="margin-top: 30px;">QUERO TODAS ESTAS ARTES</a>
+            </div>
+        </section>
+
+        <!-- Highlight Bar -->
+        <div class="highlight-bar">
+            Você recebe tudo isso:
+        </div>
+
+        <!-- Checklist -->
+        <section>
+            <div class="container">
+                <div class="check-item">
+                    <div class="check-icon">✓</div>
+                    <div>
+                        <h3 style="font-size: 0.9rem;">+1.000 Artes Pizzaria Premium</h3>
+                        <p style="font-size: 0.75rem;">Prontas para Instagram, Facebook e WhatsApp.</p>
+                    </div>
+                </div>
+                <div class="check-item">
+                    <div class="check-icon">✓</div>
+                    <div>
+                        <h3 style="font-size: 0.9rem;">Artes Por Categorias</h3>
+                        <p style="font-size: 0.75rem;">Promoção, Cardápio, Frases e Datas Comemorativas.</p>
+                    </div>
+                </div>
+                <div class="check-item">
+                    <div class="check-icon">✓</div>
+                    <div>
+                        <h3 style="font-size: 0.9rem;">Mockups Reais</h3>
+                        <p style="font-size: 0.75rem;">Para divulgar suas artes de forma profissional.</p>
+                    </div>
+                </div>
+                <div class="check-item">
+                    <div class="check-icon">✓</div>
+                    <div>
+                        <h3 style="font-size: 0.9rem;">Arquivos Editáveis no Canva</h3>
+                        <p style="font-size: 0.75rem;">Altere cores, textos e fotos com 1 clique.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it works -->
+        <section class="step-container">
+            <div class="container text-center">
+                <h2 style="margin-bottom: 50px;">Como funciona o <span class="highlight">acesso?</span></h2>
+
+                <div class="step-neo">
+                    <div class="step-num">01</div>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 5px;">Escolha o Plano</h3>
+                    <p style="font-size: 0.85rem;">Selecione a oferta que melhor atende suas necessidades hoje.</p>
+                </div>
+
+                <div class="step-neo">
+                    <div class="step-num">02</div>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 5px;">Acesso Instantâneo</h3>
+                    <p style="font-size: 0.85rem;">Após o pagamento, você recebe o link no seu e-mail na hora.</p>
+                </div>
+
+                <div class="step-neo">
+                    <div class="step-num">03</div>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 5px;">Comece a Postar</h3>
+                    <p style="font-size: 0.85rem;">Edite as artes e comece a vender mais suas pizzas hoje mesmo.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Section -->
+        <section>
+            <div class="container text-center">
+                <h2 style="margin-bottom: 40px;">Por que o <span class="highlight">Pack Pizzaria?</span></h2>
+
+                <div class="neo-card text-left" style="display: flex; gap: 20px; align-items: center;">
+                    <div style="font-size: 2rem; color: var(--primary);">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 style="font-size: 1rem;">Economize Horas</h3>
+                        <p style="font-size: 0.8rem;">Não perca tempo criando artes do zero.</p>
+                    </div>
+                </div>
+                <div class="neo-card text-left" style="display: flex; gap: 20px; align-items: center;">
+                    <div style="font-size: 2rem; color: var(--primary);">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 style="font-size: 1rem;">Poste Mais</h3>
+                        <p style="font-size: 0.8rem;">Escolha a arte, mude o texto e poste na hora.</p>
+                    </div>
+                </div>
+                <div class="neo-card text-left" style="display: flex; gap: 20px; align-items: center;">
+                    <div style="font-size: 2rem; color: var(--primary);">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 style="font-size: 1rem;">Venda Mais</h3>
+                        <p style="font-size: 0.8rem;">Tenha um perfil que gera desejo nos seus clientes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ideal For -->
+        <section class="section-dark">
+            <div class="container text-center">
+                <h2 style="margin-bottom: 30px;">Ideal para você que:</h2>
+                <div class="dark-check">
+                    <span style="color: var(--primary);">✓</span> É dono de pizzaria e quer agilidade
+                </div>
+                <div class="dark-check">
+                    <span style="color: var(--primary);">✓</span> É designer ou social media
+                </div>
+                <div class="dark-check">
+                    <span style="color: var(--primary);">✓</span> Tem um negócio de personalizados
+                </div>
+                <div class="dark-check">
+                    <span style="color: var(--primary);">✓</span> Quer uma nova fonte de renda
+                </div>
+            </div>
+        </section>
+
+        <!-- Bonus Section -->
+        <section>
+            <div class="container text-center">
+                <p style="text-transform: uppercase; font-weight: 800; font-size: 0.8rem; margin-bottom: 5px;">Presentes
+                    Exclusivos</p>
+                <h2 style="margin-bottom: 40px;">Bônus Liberados <span class="highlight">HOJE</span></h2>
+
+                <div class="bonus-neo">
+                    <div class="bonus-header">BÔNUS ESTRATÉGICO 01</div>
+                    <div class="bonus-body">
+                        <div class="bonus-img"><img src="assets/bonus-01-calendario-pizzaria.jpg"
+                                alt="Calendário de Postagens" loading="lazy"
+                                style="width: 100%; height: 100%; object-fit: cover;"></div>
+                        <h3 style="font-size: 1.1rem;">CALENDÁRIO DE POSTAGENS</h3>
+                        <p style="font-size: 0.8rem; margin-top: 5px;">Saiba exatamente o que postar em cada dia do mês
+                            para
+                            vender mais.</p>
+                        <p style="text-decoration: line-through; opacity: 0.5; font-size: 0.8rem; margin-top: 15px;">
+                            VALOR
+                            ORIGINAL: R$ 67,00</p>
+                        <div class="btn-free">GRÁTIS HOJE</div>
+                    </div>
+                </div>
+
+                <div class="bonus-neo">
+                    <div class="bonus-header">BÔNUS COPYWRITING 02</div>
+                    <div class="bonus-body">
+                        <div class="bonus-img"><img src="assets/bonus-02-legendas-pizzaria.jpg"
+                                alt="Pack de Legendas" loading="lazy"
+                                style="width: 100%; height: 100%; object-fit: cover;"></div>
+                        <h3 style="font-size: 1.1rem;">PACK DE LEGENDAS PRONTAS</h3>
+                        <p style="font-size: 0.8rem; margin-top: 5px;">Nunca mais fique sem saber o que escrever nas
+                            suas
+                            postagens.</p>
+                        <p style="text-decoration: line-through; opacity: 0.5; font-size: 0.8rem; margin-top: 15px;">
+                            VALOR
+                            ORIGINAL: R$ 37,00</p>
+                        <div class="btn-free">GRÁTIS HOJE</div>
+                    </div>
+                </div>
+
+                <div class="bonus-neo">
+                    <div class="bonus-header">BÔNUS MARKETING 03</div>
+                    <div class="bonus-body">
+                        <div class="bonus-img"><img src="assets/bonus-03-guia-instagram-pizzaria.jpg"
+                                alt="Guia de Vendas" loading="lazy"
+                                style="width: 100%; height: 100%; object-fit: cover;"></div>
+                        <h3 style="font-size: 1.1rem;">GUIA DE VENDAS NO INSTAGRAM</h3>
+                        <p style="font-size: 0.8rem; margin-top: 5px;">Como atrair seguidores qualificados e transformar
+                            em
+                            clientes.</p>
+                        <p style="text-decoration: line-through; opacity: 0.5; font-size: 0.8rem; margin-top: 15px;">
+                            VALOR
+                            ORIGINAL: R$ 47,00</p>
+                        <div class="btn-free">GRÁTIS HOJE</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section>
+            <div class="container text-center">
+                <h2 style="margin-bottom: 40px;">O que dizem os <span class="highlight">clientes</span></h2>
+
+                <div class="testi-card">
+                    <div class="testi-avatar" style="background-image: url('assets/maria.jpg');"></div>
+                    <div>
+                        <h3 style="font-size: 0.9rem;">ANA MARIA P.</h3>
+                        <p style="font-size: 0.7rem; color: #666; margin-bottom: 10px;">Recife - PE</p>
+                        <p style="font-size: 0.85rem; font-style: italic; font-weight: 600;">"As artes são incríveis! Eu
+                            perdia muito tempo criando, agora é só baixar e usar. Valeu cada centavo!"</p>
+                    </div>
+                </div>
+
+                <div class="testi-card">
+                    <div class="testi-avatar" style="background-image: url('assets/joao.jpg');"></div>
+                    <div>
+                        <h3 style="font-size: 0.9rem;">JOÃO PEDRO S.</h3>
+                        <p style="font-size: 0.7rem; color: #666; margin-bottom: 10px;">São Paulo - SP</p>
+                        <p style="font-size: 0.85rem; font-style: italic; font-weight: 600;">"Pack muito completo e
+                            organizado. As artes chamam muita atenção no Instagram."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section id="precos">
+            <div class="container">
+                <!-- Básico -->
+                <div class="price-card">
+                    <div class="price-header">
+                        <h3 style="font-size: 1rem;">Pack Pizzaria Básico</h3>
+                    </div>
+                    <div class="price-body">
+                        <p class="price-old">R$ 47,00</p>
+                        <div class="price-val"><span class="price-symbol">R$</span>9,90</div>
+
+                        <ul class="price-features">
+                            <li><span style="color: var(--green);">✓</span> 1.000 Artes Essenciais</li>
+                            <li><span style="color: var(--green);">✓</span> Acesso Vitalício</li>
+                            <li><span style="color: var(--green);">✓</span> Garantia de 7 Dias</li>
+                            <li style="opacity: 0.3;"><span>✕</span> Sem Bônus Inclusos</li>
+                            <li style="opacity: 0.3;"><span>✕</span> Sem Suporte Prioritário</li>
+                        </ul>
+
+                        <a href="#precos" onclick="openDiscountModal()" class="neo-btn"
+                            style="background: var(--black);">QUERO O BÁSICO</a>
+
+                        <div class="payment-methods">
+                            <svg width="35" height="20" viewBox="0 0 48 48">
+                                <path fill="#4db6ac"
+                                    d="M11.9,12h-0.68l8.04-8.04c2.62-2.61,6.86-2.61,9.48,0L36.78,12H36.1c-1.6,0-3.11,0.62-4.24,1.76	l-6.8,6.77c-0.59,0.59-1.53,0.59-2.12,0l-6.8-6.77C15.01,12.62,13.5,12,11.9,12z">
+                                </path>
+                                <path fill="#4db6ac"
+                                    d="M36.1,36h0.68l-8.04,8.04c-2.62,2.61-6.86,2.61-9.48,0L11.22,36h0.68c1.6,0,3.11-0.62,4.24-1.76	l6.8-6.77c0.59-0.59,1.53-0.59,2.12,0l6.8,6.77C32.99,35.38,34.5,36,36.1,36z">
+                                </path>
+                                <path fill="#4db6ac"
+                                    d="M44.04,28.74L38.78,34H36.1c-1.07,0-2.07-0.42-2.83-1.17l-6.8-6.78c-1.36-1.36-3.58-1.36-4.94,0	l-6.8,6.78C13.97,33.58,12.97,34,11.9,34H9.22l-5.26-5.26c-2.61-2.62-2.61-6.86,0-9.48L9.22,14h2.68c1.07,0,2.07,0.42,2.83,1.17	l6.8,6.78c0.68,0.68,1.58,1.02,2.47,1.02s1.79-0.34,2.47-1.02l6.8-6.78C34.03,14.42,35.03,14,36.1,14h2.68l5.26,5.26	C46.65,21.88,46.65,26.12,44.04,28.74z">
+                                </path>
+                            </svg>
+                            <svg width="35" height="20" viewBox="0 0 48 48">
+                                <path fill="#1565C0"
+                                    d="M45,35c0,2.209-1.791,4-4,4H7c-2.209,0-4-1.791-4-4V13c0-2.209,1.791-4,4-4h34c2.209,0,4,1.791,4,4V35z">
+                                </path>
+                                <path fill="#FFF"
+                                    d="M15.186 19l-2.626 7.832c0 0-.667-3.313-.733-3.729-1.495-3.411-3.701-3.221-3.701-3.221L10.726 30v-.002h3.161L18.258 19H15.186zM17.689 30L20.56 30 22.296 19 19.389 19zM38.008 19h-3.021l-4.71 11h2.852l.588-1.571h3.596L37.619 30h2.613L38.008 19zM34.513 26.328l1.563-4.157.818 4.157H34.513zM26.369 22.206c0-.606.498-1.057 1.926-1.057.928 0 1.991.674 1.991.674l.466-2.309c0 0-1.358-.515-2.691-.515-3.019 0-4.576 1.444-4.576 3.272 0 3.306 3.979 2.853 3.979 4.551 0 .291-.231.964-1.888.964-1.662 0-2.759-.609-2.759-.609l-.495 2.216c0 0 1.063.606 3.117.606 2.059 0 4.915-1.54 4.915-3.752C30.354 23.586 26.369 23.394 26.369 22.206z">
+                                </path>
+                                <path fill="#FFC107"
+                                    d="M12.212,24.945l-0.966-4.748c0,0-0.437-1.029-1.573-1.029c-1.136,0-4.44,0-4.44,0S10.894,20.84,12.212,24.945z">
+                                </path>
+                            </svg>
+                            <svg width="35" height="20" viewBox="0 0 24 24" id="mastercard">
+                                <path fill="#FF5F00" d="M15.245 17.831h-6.49V6.168h6.49v11.663z"></path>
+                                <path fill="#EB001B"
+                                    d="M9.167 12A7.404 7.404 0 0 1 12 6.169 7.417 7.417 0 0 0 0 12a7.417 7.417 0 0 0 11.999 5.831A7.406 7.406 0 0 1 9.167 12z">
+                                </path>
+                                <path fill="#F79E1B"
+                                    d="M24 12a7.417 7.417 0 0 1-12 5.831c1.725-1.358 2.833-3.465 2.833-5.831S13.725 7.527 12 6.169A7.417 7.417 0 0 1 24 12z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Completo -->
+                <div class="price-card" style="border-color: var(--primary); box-shadow: 12px 12px 0px var(--black);">
+                    <div class="discount-badge">SALVE 85%</div>
+                    <div class="price-header" style="background: var(--primary);">
+                        <h3 style="font-size: 1rem;">Pack Completo + Bônus</h3>
+                    </div>
+                    <div class="price-body" style="background: #f9fafb;">
+                        <p class="price-old">R$ 147,00</p>
+                        <div class="price-val" style="color: var(--primary);"><span class="price-symbol">R$</span>19,90
+                        </div>
+
+                        <ul class="price-features">
+                            <li><span style="color: var(--green);">✓</span> 10.000 Artes Pizzaria Premium</li>
+                            <li><span style="color: var(--green);">✓</span> BÔNUS: Calendário Estratégico</li>
+                            <li><span style="color: var(--green);">✓</span> BÔNUS: Pack de Legendas</li>
+                            <li><span style="color: var(--green);">✓</span> BÔNUS: Guia de Vendas Insta</li>
+                            <li><span style="color: var(--green);">✓</span> Suporte Prioritário VIP</li>
+                            <li><span style="color: var(--green);">✓</span> Garantia de 30 Dias</li>
+                            <li><span style="color: var(--green);">✓</span> Acesso Vitalício + Atualizações</li>
+                        </ul>
+
+                        <a href="https://secret21.pay.yampi.com.br/r/AUFO4IQQUN" class="neo-btn"
+                            style="background: var(--primary);">QUERO O COMPLETO</a>
+
+                        <div class="payment-methods">
+                            <svg width="35" height="20" viewBox="0 0 48 48">
+                                <path fill="#4db6ac"
+                                    d="M11.9,12h-0.68l8.04-8.04c2.62-2.61,6.86-2.61,9.48,0L36.78,12H36.1c-1.6,0-3.11,0.62-4.24,1.76	l-6.8,6.77c-0.59,0.59-1.53,0.59-2.12,0l-6.8-6.77C15.01,12.62,13.5,12,11.9,12z">
+                                </path>
+                                <path fill="#4db6ac"
+                                    d="M36.1,36h0.68l-8.04,8.04c-2.62,2.61-6.86,2.61-9.48,0L11.22,36h0.68c1.6,0,3.11-0.62,4.24-1.76	l6.8-6.77c0.59-0.59,1.53-0.59,2.12,0l6.8,6.77C32.99,35.38,34.5,36,36.1,36z">
+                                </path>
+                                <path fill="#4db6ac"
+                                    d="M44.04,28.74L38.78,34H36.1c-1.07,0-2.07-0.42-2.83-1.17l-6.8-6.78c-1.36-1.36-3.58-1.36-4.94,0	l-6.8,6.78C13.97,33.58,12.97,34,11.9,34H9.22l-5.26-5.26c-2.61-2.62-2.61-6.86,0-9.48L9.22,14h2.68c1.07,0,2.07,0.42,2.83,1.17	l6.8,6.78c0.68,0.68,1.58,1.02,2.47,1.02s1.79-0.34,2.47-1.02l6.8-6.78C34.03,14.42,35.03,14,36.1,14h2.68l5.26,5.26	C46.65,21.88,46.65,26.12,44.04,28.74z">
+                                </path>
+                            </svg>
+                            <svg width="35" height="20" viewBox="0 0 48 48">
+                                <path fill="#1565C0"
+                                    d="M45,35c0,2.209-1.791,4-4,4H7c-2.209,0-4-1.791-4-4V13c0-2.209,1.791-4,4-4h34c2.209,0,4,1.791,4,4V35z">
+                                </path>
+                                <path fill="#FFF"
+                                    d="M15.186 19l-2.626 7.832c0 0-.667-3.313-.733-3.729-1.495-3.411-3.701-3.221-3.701-3.221L10.726 30v-.002h3.161L18.258 19H15.186zM17.689 30L20.56 30 22.296 19 19.389 19zM38.008 19h-3.021l-4.71 11h2.852l.588-1.571h3.596L37.619 30h2.613L38.008 19zM34.513 26.328l1.563-4.157.818 4.157H34.513zM26.369 22.206c0-.606.498-1.057 1.926-1.057.928 0 1.991.674 1.991.674l.466-2.309c0 0-1.358-.515-2.691-.515-3.019 0-4.576 1.444-4.576 3.272 0 3.306 3.979 2.853 3.979 4.551 0 .291-.231.964-1.888.964-1.662 0-2.759-.609-2.759-.609l-.495 2.216c0 0 1.063.606 3.117.606 2.059 0 4.915-1.54 4.915-3.752C30.354 23.586 26.369 23.394 26.369 22.206z">
+                                </path>
+                                <path fill="#FFC107"
+                                    d="M12.212,24.945l-0.966-4.748c0,0-0.437-1.029-1.573-1.029c-1.136,0-4.44,0-4.44,0S10.894,20.84,12.212,24.945z">
+                                </path>
+                            </svg>
+                            <svg width="35" height="20" viewBox="0 0 24 24" id="mastercard">
+                                <path fill="#FF5F00" d="M15.245 17.831h-6.49V6.168h6.49v11.663z"></path>
+                                <path fill="#EB001B"
+                                    d="M9.167 12A7.404 7.404 0 0 1 12 6.169 7.417 7.417 0 0 0 0 12a7.417 7.417 0 0 0 11.999 5.831A7.406 7.406 0 0 1 9.167 12z">
+                                </path>
+                                <path fill="#F79E1B"
+                                    d="M24 12a7.417 7.417 0 0 1-12 5.831c1.725-1.358 2.833-3.465 2.833-5.831S13.725 7.527 12 6.169A7.417 7.417 0 0 1 24 12z">
+                                </path>
+                            </svg>
+                        </div>
+                        <p style="font-size: 0.65rem; font-weight: 700; margin-top: 15px; opacity: 0.6;">Acesso imediato
+                            enviado para o seu e-mail.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section>
+            <div class="container text-center">
+                <h2 style="margin-bottom: 40px;">Dúvidas <span class="highlight">Frequentes:</span></h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>COMO RECEBO O ACESSO?</span>
+                        <span class="faq-icon">⌄</span>
+                    </div>
+                    <div class="faq-answer">
+                        O acesso é enviado automaticamente para o seu e-mail logo após a confirmação do pagamento.
+                        Pagamentos via PIX e Cartão liberam na hora!
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>AS ARTES SÃO EDITÁVEIS?</span>
+                        <span class="faq-icon">⌄</span>
+                    </div>
+                    <div class="faq-answer">
+                        Sim! Todas as artes são 100% editáveis no Canva. Você pode mudar cores, textos, imagens e logo
+                        usando apenas o celular ou computador.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>POR QUANTO TEMPO TEREI ACESSO?</span>
+                        <span class="faq-icon">⌄</span>
+                    </div>
+                    <div class="faq-answer">
+                        O acesso é vitalício. Você paga uma única vez e o material é seu para sempre, incluindo todas as
+                        atualizações futuras que fizermos no pack.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>PRECISO DO CANVA PRO?</span>
+                        <span class="faq-icon">⌄</span>
+                    </div>
+                    <div class="faq-answer">
+                        Não! Todas as artes foram criadas para serem usadas tanto na versão Gratuita quanto na Pro do
+                        Canva.
+                        Você não terá nenhum custo extra.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>TEM SUPORTE?</span>
+                        <span class="faq-icon">⌄</span>
+                    </div>
+                    <div class="faq-answer">
+                        Sim! Temos uma equipe pronta para tirar suas dúvidas via WhatsApp caso precise de qualquer ajuda
+                        com
+                        os arquivos.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guarantee -->
+        <section>
+            <div class="container">
+                <div class="guar-box">
+                    <div class="guar-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-7.618 3.04c0 4.805 1.723 9.21 4.593 12.558a11.723 11.723 0 004.05 3.036 11.723 11.723 0 004.05-3.036c2.87-3.348 4.593-7.753 4.593-12.558z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h2 style="font-size: 1.5rem; margin-bottom: 10px;">7 Dias de <span
+                            class="highlight">Garantia</span>
+                    </h2>
+                    <p style="font-weight: 600; margin-bottom: 30px;">Se você não gostar do material por qualquer
+                        motivo,
+                        nós devolvemos cada centavo do seu investimento.</p>
+                    <a href="#precos" class="neo-btn">QUERO TESTAR SEM RISCO</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p>© 2026 PACK PIZZARIA™</p>
+                <p style="margin-top: 10px; opacity: 0.7;">A BIBLIOTECA DEFINITIVA PARA PIZZARIAS DE SUCESSO.</p>
+                <div style="margin-top: 20px; font-size: 0.7rem;">🔒 COMPRA 100% SEGURA | ✓ SATISFAÇÃO GARANTIDA</div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Notification -->
+    <div class="notif-neo" id="notif">
+        <div class="notif-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+        </div>
+        <div>
+            <span class="notif-name" id="notif-name">Mariana</span> acabou de comprar o <strong>plano
+                completo</strong><br>
+            <span class="notif-meta" id="notif-meta">há 1 minuto · São Paulo - SP</span>
+        </div>
+    </div>
+
+    <!-- Discount Modal -->
+    <div class="modal-overlay" id="discountModal">
+        <div class="modal-neo">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <h2 style="font-size: 1.5rem; margin-bottom: 10px; line-height: 1.1;">ESPERE! <br>OFERTA ESPECIAL 🔥</h2>
+            <p style="font-weight: 700; opacity: 0.8; font-size: 0.9rem;">Leve o <span
+                    style="color: var(--primary);">Plano Completo</span> com um desconto exclusivo de última hora!</p>
+
+            <div class="modal-price-box">
+                <span style="text-decoration: line-through; opacity: 0.4; font-size: 1.1rem; font-weight: 700;">R$
+                    19,90</span>
+                <span style="color: var(--green); font-size: 2.2rem; font-weight: 900;">R$ 14,90</span>
+            </div>
+
+            <ul class="price-features" style="margin: 20px 0; font-size: 0.8rem; text-align: left;">
+                <li><span style="color: var(--green);">✓</span> 10.000 Artes Pizzaria Premium</li>
+                <li><span style="color: var(--green);">✓</span> BÔNUS: Calendário + Legendas + Guia</li>
+                <li><span style="color: var(--green);">✓</span> Suporte Prioritário VIP</li>
+                <li><span style="color: var(--green);">✓</span> Garantia Blindada de 30 Dias</li>
+                <li><span style="color: var(--green);">✓</span> Acesso Vitalício + Atualizações</li>
+            </ul>
+
+            <a href="https://secret21.pay.yampi.com.br/r/NBKG7148QH" class="neo-btn"
+                style="background: var(--green); width: 100%; border-radius: 0; margin-bottom: 5px;">QUERO O COMPLETO
+                POR R$ 14,90</a>
+            <span class="modal-link" onclick="goToBasic()">Não, quero continuar com o Plano Básico</span>
+        </div>
+    </div>
+
+    <script>
+        // Modal Logic
+        function openDiscountModal() {
+            document.getElementById('discountModal').style.display = 'flex';
+            document.body.style.overflow = 'hidden'; // Disable scroll
+        }
+        function closeModal() {
+            document.getElementById('discountModal').style.display = 'none';
+            document.body.style.overflow = 'auto'; // Enable scroll
+        }
+        function goToBasic() {
+            document.body.style.overflow = 'auto'; // Enable scroll
+            window.location.href = "https://secret21.pay.yampi.com.br/r/FT562QXNWO";
+        }
+
+        // Timer
+        function startTimer() {
+            let h = 2, m = 46, s = 46;
+            setInterval(() => {
+                s--;
+                if (s < 0) { s = 59; m--; }
+                if (m < 0) { m = 59; h--; }
+                document.getElementById('timer').textContent =
+                    (h < 10 ? "0" + h : h) + ":" + (m < 10 ? "0" + m : m) + ":" + (s < 10 ? "0" + s : s);
+            }, 1000);
+        }
+        startTimer();
+
+        // Notifications
+        const names = ["Mariana", "Ana Maria", "João Pedro", "Fernanda", "Carlos"];
+        const cities = ["São Paulo - SP", "Recife - PE", "Belo Horizonte - MG", "Curitiba - PR", "Rio de Janeiro - RJ"];
+
+        function showNotif() {
+            const name = names[Math.floor(Math.random() * names.length)];
+            const city = cities[Math.floor(Math.random() * cities.length)];
+            document.getElementById('notif-name').textContent = name;
+            document.getElementById('notif-meta').textContent = `há ${Math.floor(Math.random() * 5) + 1} minutos · ${city}`;
+            const el = document.getElementById('notif');
+            el.classList.add('show');
+            setTimeout(() => el.classList.remove('show'), 4000);
+        }
+        setInterval(showNotif, 20000);
+        setTimeout(showNotif, 3000);
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(q => {
+            q.addEventListener('click', () => {
+                const item = q.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
